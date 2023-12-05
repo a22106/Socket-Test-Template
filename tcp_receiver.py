@@ -1,7 +1,7 @@
 import socket
 
 SERVER_HOST = '0.0.0.0'
-SERVER_PORT = 8505 # Port for listening
+SERVER_PORT = 8505 
 
 # Create a socket object
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
@@ -26,7 +26,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
             data = client_socket.recv(1024)
             if not data:
                 break
-            print('Received from the client:', repr(data))
+            print('Received from client:', repr(data))
 
             # Send data to the client
             # client_socket.sendall(b'Hello from the server!')

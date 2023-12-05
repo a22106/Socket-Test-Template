@@ -1,6 +1,6 @@
 import socket
 
-SERVER_HOST = '127.0.0.1'
+SERVER_HOST = '0.0.0.0'
 SERVER_PORT = 8505
 
 # Create a socket object
